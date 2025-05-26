@@ -43,31 +43,6 @@ const Profile = ({ userInfo, loginInfo }) => {
           Lorem Ipsum Dolor Sit Amet, Consectetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
         </div>
 
-        {/* Additional User Info Display */}
-        {userInfo && (
-          <div className="mt-6 pt-6 border-t border-gray-200">
-            <div className="space-y-3 text-sm">
-              {userInfo.phoneNumber && (
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Phone:</span>
-                  <span className="text-gray-900">{userInfo.phoneNumber}</span>
-                </div>
-              )}
-              {userInfo.companyName && (
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Company:</span>
-                  <span className="text-gray-900">{userInfo.companyName}</span>
-                </div>
-              )}
-              <div className="flex justify-between">
-                <span className="text-gray-500">Account Type:</span>
-                <span className="text-gray-900">
-                  {userInfo.isAgency ? 'Agency' : 'Individual'}
-                </span>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
